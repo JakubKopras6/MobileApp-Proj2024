@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Movies</ion-title>
+    <!--This is the back button, for navigating through the app-->
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Movies</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <p>List of movies with 'War' in the title</p>
+  <ion-list style="margin:10px;">
+    <!--data binding for getting API asynchronously-->
+    <ion-item *ngFor="let m of movies" style="align-items: center;">
+
+        <ion-card >
+          <!--data binding for getting API asynchronously-->
+          <ion-img src={{m.Poster}}></ion-img>
+          <ion-card-header>
+            <ion-card-subtitle>{{m.Year}}</ion-card-subtitle>
+            <ion-card-title>{{m.Title}}</ion-card-title>
+          </ion-card-header>
+        </ion-card>
+        
+    </ion-item>
+  </ion-list>
+  <!--routerlink to send us back to the home page-->
+  <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+</ion-content>

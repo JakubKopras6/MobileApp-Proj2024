@@ -1,0 +1,37 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+ 
+ <br><br><br><br><br><br><br><br><br><br><br><br>
+ 
+ <br>
+
+ <p>Here are the four of my favourite movies</p>
+ <br>
+ <!--Using ion-butto to seperate the 4 films from the rest of the routerlinks-->
+ <ion-button [routerLink]="['/bladerunner']" fill="outline" color="white">Blade runner</ion-button><br>
+ <ion-button [routerLink]="['/butch']" fill="outline"color="#white">Butch Cassidy And The Sundance Kid</ion-button><br>
+ <ion-button [routerLink]="['/excalibur']" fill="outline" color="white">Excalibur</ion-button><br>
+ <ion-button [routerLink]="['/brazil']" fill="outline" color="white">Brazil</ion-button><br>
+ <br>
+ <br>
+ <p color="blue">App features</p>
+ <li [routerLink]="['/summaryapp']" color="orange">Summary</li><br>
+ <p color="blue">List of movies with 'War' in the title</p>
+ <li [routerLink]="['/movies']" color="orange">'War' Movies</li><br>
+ <p color="blue">Vote for your favourite movie</p>
+ <li [routerLink]="['/status']" color="orange">Favourite Movie</li><br>
+ <p color="blue">Find your location with GPS</p>
+ <li [routerLink]="['/gps']" color="orange">GPS</li><br>
+ <p color="blue">Check out the current screening times in pallas Galway</p>
+ <li [routerLink]="['/browser']" color="orange">Cinema Times</li><br>
+ 
+  </div>
+</ion-content>

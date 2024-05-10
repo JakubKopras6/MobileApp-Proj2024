@@ -1,0 +1,30 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>blade runner</ion-title>
+
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title color = "red" size="medium">Blade Runner</ion-title>
+      <ion-back-button slot="start"></ion-back-button>
+    </ion-toolbar>
+  </ion-header>
+  <h3>Blade Runner</h3>
+  <p>Blade Runner is a 1982 science fiction film, directed by Ridley Scott and written by Hampton Fancher and David Peoples.
+    Starring Harrison Ford, Rutger Hauer, Sean Young, and Edward James Olmos, 
+    it is an adaptation of Philip K. Dick's 1968 novel Do Androids Dream of Electric Sheep? The film is set in a dystopian future 
+    Los Angeles of 2019, in which synthetic humans known as replicants are bio-engineered by the powerful Tyrell Corporation to work on space colonies.
+   </p>
+   <p>Click here for more information on Blade Runner the movie</p>
+   <li [routerLink]="['/bladerunnerinfo']" color="orange">Blade Runner info</li><br>
+  <div style="align-content: center;">
+  <ion-img size = small src="https://m.media-amazon.com/images/M/MV5BNzQzMzJhZTEtOWM4NS00MTdhLTg0YjgtMjM4MDRkZjUwZDBlXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_.jpg"></ion-img>
+  </div>
+  
+  <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+  
+</ion-content>

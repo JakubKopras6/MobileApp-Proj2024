@@ -1,0 +1,44 @@
+<ion-content>
+  <ion-header [translucent]="true">
+  <ion-toolbar>
+    <!--This is the back button, for navigating through the app-->
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+                           <!--data binding-->
+  <ion-list>
+  <ion-radio-group [(ngModel)]="myStatus">
+  <ion-item>
+  <ion-label>Blade Runner</ion-label>
+  <!--radio buttons used for status-->
+  <ion-radio value="bladerunner"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Butch Cassidy And The Sundance Kid</ion-label>
+  <ion-radio value="butch"></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Excalibur</ion-label>
+  <ion-radio value="excalibur" ></ion-radio>
+  </ion-item>
+  <ion-item>
+  <ion-label>Brazil</ion-label>
+  <ion-radio value="brazil" ></ion-radio>
+  </ion-item>
+  </ion-radio-group>
+  </ion-list>
+  <ion-button (click)="saveStatus()">Save</ion-button>
+  <br>
+  <h4 color="gold">Current favourite movie is {{myStatus}}</h4>
+
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <!--routerlink to send us back to the home page-->
+  <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+  </ion-content>

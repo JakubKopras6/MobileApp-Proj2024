@@ -1,0 +1,39 @@
+.bladerunner {
+    ion-header {
+      ion-toolbar {
+        --background: #20232a; // Dark background color
+        --color: #ffffff; // Text color
+      }
+      ion-title {
+        font-size: 20px; // Larger font size for title
+      }
+      ion-back-button {
+        color: #ffffff; // Back button color
+      }
+    }
+  
+    ion-content {
+      background-color: #ffffff; // Content background color
+      padding: 20px; // Add padding around content
+      ion-img {
+        width: 100%; // Make the image full width
+        margin-top: 20px; // Add some space above the image
+      }
+      h3 {
+        color: #20232a; // Heading color
+        font-size: 24px; // Larger font size for heading
+      }
+      p {
+        color: #20232a; // Text color
+        font-size: 16px; // Font size for paragraphs
+      }
+      li {
+        color: #007bff; // Link color
+        cursor: pointer; // Change cursor to pointer on hover
+        &:hover {
+          text-decoration: underline; // Underline link on hover
+        }
+      }
+    }
+  }
+  

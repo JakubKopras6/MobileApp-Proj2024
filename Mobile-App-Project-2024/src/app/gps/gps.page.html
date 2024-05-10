@@ -1,0 +1,29 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>GPS</ion-title>
+
+    <ion-back-button slot="start"></ion-back-button>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">GPS</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <div>
+    <!--The getGPS() function  gets the current GPS of the device using the app-->
+    <ion-button (click)="getGPS()">Get GPS</ion-button>
+    {{lat}}, {{long}}
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <li [routerLink]="['/home']" color="orange">BACK TO HOME</li><br>
+</ion-content>
